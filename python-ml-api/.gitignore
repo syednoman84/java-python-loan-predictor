@@ -1,0 +1,38 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VSCode / PyCharm / IDEs
+.idea/
+.vscode/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Model artifacts
+#*.pkl
+*.joblib
+
+# Data files
+*.csv
+*.tsv
+data/
+
+# Logs and outputs
+*.log
+logs/
+
+# Python env config
+.env
+.env.*
+
+# OS-specific
+.DS_Store
+Thumbs.db
