@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "fb3c1763-7b25-42f5-84d4-153234819ac5",
+		"name": "java-python-ml-integration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13380147"
+	},
+	"item": [
+		{
+			"name": "predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// no default\n// {\n//   \"income\": 40000,\n//   \"loan_amount\": 1000,\n//   \"term\": 36,\n//   \"credit_score\": 700\n// }\n\n// default\n{\n  \"income\": 40000,\n  \"loan_amount\": 9000,\n  \"term\": 36,\n  \"credit_score\": 700\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/loan/predict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"loan",
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict_lc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// no default\n{\n  \"loan_amnt\": 10000,\n  \"term\": 36,\n  \"int_rate\": 12.5,\n  \"annual_inc\": 60000,\n  \"emp_length\": 5,\n  \"dti\": 15.3,\n  \"fico_range_high\": 720\n}\n\n// default\n// {\n//   \"loan_amnt\": 25000,\n//   \"term\": 60,\n//   \"int_rate\": 23.5,\n//   \"annual_inc\": 22000,\n//   \"emp_length\": 0.5,\n//   \"dti\": 29.8,\n//   \"fico_range_high\": 600\n// }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/loan/predict/lc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"loan",
+						"predict",
+						"lc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
