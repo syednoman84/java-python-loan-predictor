@@ -41,6 +41,8 @@ python-ml-api/
 ├── training/
 │   ├── train_model.py         # Trains dummy model
 │   └── train_model_lc.py      # Trains LendingClub model
+├── visualization/
+│   ├── visualize_tree.py         # Tree visualization for the decisions made during model execution
 ├── data/
 │   └── loan_sample_data.csv   # LendingClub sample dataset (10k rows)
 ├── loan_default_model.pkl     # Saved dummy model
